@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "621278902507",
+    "project_id": "watchdl",
+    "storage_bucket": "watchdl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621278902507:android:41236c7103ac5a07a526ae",
+        "android_client_info": {
+          "package_name": "com.example.watchdl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621278902507-e574c5p261d7hr48324obfu4br9pd1hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0bawpACLq3veU-cQc9764k7sYXnyVPy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621278902507-e574c5p261d7hr48324obfu4br9pd1hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

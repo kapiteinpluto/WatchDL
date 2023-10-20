@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_border"
+    tools:layout_marginTop="80dp"
+    >
+
+    <TextView
+        android:id="@+id/busNumber"
+        android:layout_width="wrap_content"
+        android:minWidth="18dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingHorizontal="4dp"
+        android:text=""
+        android:textSize="11sp"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="14"
+        />
+
+    <TextView
+        android:id="@+id/busRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="11sp"
+        android:textColor="#FFF"
+        android:textAlignment="textStart"
+
+        app:layout_constraintStart_toEndOf="@id/busNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Deinze - Gent" />
+
+    <ImageView
+        android:id="@+id/busOffline"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="@string/indicatore_no_live_info_from_bus"
+
+        android:src="@drawable/ic_offline"
+        app:tint="@color/grey"
+
+        app:layout_constraintEnd_toStartOf="@id/busArriveTime"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:tint="@color/grey"/>
+
+    <TextView
+        android:id="@+id/busArriveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="20dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="14'"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

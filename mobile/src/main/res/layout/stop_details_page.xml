@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.watchdl.customLayouts.CustomHeaderLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:titleText="@string/app_name"
+        android:translationZ="3dp"
+    />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="700"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:text="202774 - Deinze Hulhaege"
+    />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="0dp"
+
+
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_arrow_right"
+        android:rotation="180"
+
+        app:layout_constraintTop_toTopOf="@id/pageTitle"
+        app:layout_constraintBottom_toBottomOf="@id/pageTitle"
+        app:layout_constraintEnd_toStartOf="@id/pageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="110dp"
+
+        app:layout_constraintTop_toBottomOf="@id/pageTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:listitem="@layout/line_item"
+    />
+
+    <EditText
+        android:hint="@string/enter_busnumber"
+        android:autofillHints=""
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:outlineProvider="bounds"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toTopOf="@id/buttonAddBus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddBus"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"
+
+        android:text="@string/add_bus"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="@color/light_blue"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRemoveStop"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:text="@string/remove_stop"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="@color/red"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonDisableAll"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDisableAll"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:text="@string/disable_all"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="@color/light_blue"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonRemoveStop"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

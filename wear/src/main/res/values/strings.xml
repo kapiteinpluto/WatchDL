@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WatchDL</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="arrow_left"><![CDATA[<]]></string>
+    <string name="arrow_right"><![CDATA[>]]></string>
+    <string name="geen_doorkomsten">Geen doorkomsten</string>
+    <string name="reload_button">reload button</string>
+    <string name="you_are_offline">You\'re offline</string>
+    <string name="no_busstops">Add busstops with the companion app on your phone</string>
+    <string name="indicatore_no_live_info_from_bus">indicatore no live info from bus</string>
+</resources>
